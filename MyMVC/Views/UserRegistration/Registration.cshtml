@@ -1,0 +1,29 @@
+﻿@model MyMVC.Models.UserReg
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registraion</title>
+</head>
+<body>
+    <form method="post">
+        @Html.LabelFor(x => x.Name):@Html.TextBoxFor(x => x.Name)<br />
+
+        @Html.LabelFor(x => x.Email):@Html.TextBoxFor(x => x.Email)<br />
+
+        @Html.LabelFor(x => x.Password):@Html.TextBoxFor(x => x.Password)<br />
+
+        @Html.LabelFor(x => x.Gender):@Html.TextBoxFor(x => x.Gender)
+
+        <input type="submit" value="save" />
+    </form>
+
+    if you are already registered,please @Html.ActionLink("Click here","UserLogin") to login..
+</body>
+</html>

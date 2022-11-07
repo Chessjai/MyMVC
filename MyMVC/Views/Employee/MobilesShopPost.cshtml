@@ -1,0 +1,29 @@
+﻿@model MyMVC.Models.Mobile
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MobilesShopPost</title>
+</head>
+<body>
+    <div> 
+        <form method="post">
+            @Html.LabelFor(x => x.ID):@Html.TextBoxFor(x => x.ID)<br />
+            @Html.LabelFor(x => x.ModelName):@Html.TextBoxFor(x => x.ModelName)<br />
+
+            @Html.LabelFor(x => x.ModelNumber):@Html.TextBoxFor(x => x.ModelNumber)<br />
+
+            @Html.LabelFor(x => x.Price):@Html.TextBoxFor(x => x.Price)<br />
+
+            @Html.LabelFor(x => x.ShopName):@Html.TextBoxFor(x => x.ShopName)
+
+            <input type="submit" value="save" />
+        </form>
+    </div>
+</body>
+</html>

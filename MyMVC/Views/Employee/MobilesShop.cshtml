@@ -1,0 +1,29 @@
+﻿@model List<MyMVC.Models.Mobile>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MobilesShop</title>
+</head>
+<body>
+    <div>
+        Welcome to my Mobiles Shop<br />
+        <u>Model Names:</u> <br />
+        @foreach (var item in Model)
+        {
+            <font color="black">@item.ModelName</font> <br />
+        }
+        <u>Model Number:</u> <br />
+        @foreach (var item in Model)
+        {
+            <font color="green">@item.ModelNumber</font> <br />
+        }
+
+    </div>
+</body>
+</html>
